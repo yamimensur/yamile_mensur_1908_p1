@@ -1,0 +1,62 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    margin: 5% 3% 10% 3%
+
+}
+
+.noticia img{
+    width: 100%;
+    height: auto;
+}
+
+.categoria{
+    color:rgb(199, 190, 179);
+    font-size: 15px;
+}
+
+.noticia a{
+    display: block;
+    text-decoration: none;
+}
+.noticia a:hover{
+    text-decoration: underline;
+    color: rgb(240, 46, 165);
+}
+
+.detalle{
+    display: inline;
+    color: rgb(199, 190, 179);;
+}
+
+.contenedor aside{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(199, 190, 179);
+    margin-top: 7%;
+    justify-content: space-around;
+
+}
+
+.contenedor aside div p{
+    font-size: 100%;
+    background-color: beige;
+}
+
+
+@media (max-width: 600px){
+    .contenedor{
+    flex-direction: column;
+    gap: 5%;
+    }
+
+    .contenedor aside{
+    display: flex;
+    flex-direction: row;
+}
+}
